@@ -2,7 +2,7 @@ const SITE_CONFIG = {
 	siteName: "psyonly's Blog",
 	siteLanguage: "zh-Hans",
 	description: "psyonly 的个人博客，胡乱写些东西",
-	avatarPath: "/hyoban.png",
+	avatarPath: "/Dorado.png",
 	faviconPath: "/favicon.svg",
 	links: [
 		{
