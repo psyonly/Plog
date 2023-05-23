@@ -26,7 +26,7 @@ const SITE_CONFIG = {
 	authorName: "psyonly",
 	authorLink: "https://plog-dun.vercel.app",
 	authorEmail: "hi@psyonly.cc",
-	timeZone: "Asia/Jinan",
+	timeZone: "Asia/Shanghai",
 	source: "local",
 } as const
 
