@@ -6,7 +6,7 @@ export default function IconLink({
 	className = "",
 	iconOnly = false,
 }: {
-	type: "GitHub" | "Twitter" | "Email"
+	type: "GitHub" | "Twitter" | "Email" | "LeetCode"
 	url: string
 	className?: string
 	iconOnly?: boolean
@@ -20,6 +20,8 @@ export default function IconLink({
 					? "i-carbon-logo-twitter"
 					: type === "Email"
 					? "i-carbon-email"
+					: type === "LeetCode"
+					? "i-carbon-logo-wechat"
 					: "",
 				className
 			)}
