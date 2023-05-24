@@ -1,6 +1,6 @@
 ---
 title: 测试POST上传
-permalink: code-format
+permalink: test-post
 description: "测试自己编写帖子需要的格式"
 cover: https://image.hyoban.cc/file/02e3e5c437e184248f5cb.png
 publish: true
