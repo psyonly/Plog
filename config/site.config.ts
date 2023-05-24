@@ -10,10 +10,6 @@ const SITE_CONFIG = {
 			url: "https://github.com/psyonly",
 		},
 		{
-			type: "LeetCode",
-			url: "https://leetcode.cn/u/ba-chuan-fan",
-		},
-		{
 			type: "Email",
 			url: "mailto:hi@psyonly.cc",
 		},
