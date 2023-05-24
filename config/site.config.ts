@@ -2,8 +2,8 @@ const SITE_CONFIG = {
 	siteName: "psyonly's Blog",
 	siteLanguage: "zh-Hans",
 	description: "psyonly 的个人博客，胡乱写些东西",
-	avatarPath: "/Dorado.png",
-	faviconPath: "/Dorado.png",
+	avatarPath: "/dorado.png",
+	faviconPath: "/dorado.ico",
 	links: [
 		{
 			type: "GitHub",
