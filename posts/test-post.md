@@ -20,5 +20,5 @@ tags:
 ···敬请期待
 
 ```go
-fmt.Println("Sample")
+fmt.Println("Blog.Sample")
 ```
