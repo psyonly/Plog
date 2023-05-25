@@ -23,7 +23,7 @@ const SITE_CONFIG = {
 	authorLink: "https://plog-dun.vercel.app",
 	authorEmail: "hi@psyonly.cc",
 	timeZone: "Asia/Shanghai",
-	source: "notion",
+	source: "local",
 } as const
 
 export default SITE_CONFIG
