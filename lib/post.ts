@@ -8,13 +8,13 @@ import {
 import { Metadata, ValidPost } from "@/types/post"
 
 export const getMetadataList = async () => {
-	return SITE_CONFIG.source === "local"
+	return SITE_CONFIG.source.toString() === "local"
 		? await getMetadataListLocal()
 		: await getMetadataListNotion()
 }
 
 export const getPost = async (permalink: string): Promise<ValidPost | null> => {
-	if (SITE_CONFIG.source === "local") {
+	if (SITE_CONFIG.source.toString() === "local") {
 		return await getPostFromLocal(permalink)
 	}
 	const metadata = await getPostMetadataNotion(permalink)
@@ -30,7 +30,7 @@ export const getPost = async (permalink: string): Promise<ValidPost | null> => {
 export const getPostMetadata = async (
 	permalink: string
 ): Promise<Metadata | null> => {
-	if (SITE_CONFIG.source === "local") {
+	if (SITE_CONFIG.source.toString() === "local") {
 		const post = await getPostFromLocal(permalink)
 		return post.metadata
 	}
