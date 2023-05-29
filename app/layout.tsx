@@ -70,7 +70,7 @@ export default function RootLayout({
 		>
 			<body className="p-8 font-sans transition-colors duration-500 dark:bg-neutral-900 dark:text-white">
 				<ThemeProvider>
-					<div className="mx-auto max-w-[60ch]">
+					<div className="mx-auto max-w-[100ch]">
 						<Header />
 						<main className="flex flex-col py-8">{children}</main>
 						<Footer />
