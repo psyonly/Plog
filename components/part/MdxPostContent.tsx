@@ -52,10 +52,13 @@ const components: MDXRemoteProps["components"] = {
 }
 
 export default function MdxPostContent({ content, metadata }: LocalPost) {
+	const tagList = metadata.tags.map((item, i) =>{ return <b key={i}>{item}</b> })
 	return (
 		<Prose>
 			<h1>{metadata.title}</h1>
-			<p>{metadata.description}</p>
+			<h3>{metadata.description}</h3>
+			{tagList}
+			<hr/>
 			{/* @ts-expect-error Server Component */}
 			<MDXRemote source={content} components={components} />
 		</Prose>
