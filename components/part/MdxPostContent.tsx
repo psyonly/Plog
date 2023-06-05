@@ -53,7 +53,7 @@ const components: MDXRemoteProps["components"] = {
 
 export default function MdxPostContent({ content, metadata }: LocalPost) {
 	let tags = "Tags: "
-	metadata.tags.map((item, i) =>{ tags += item })
+	metadata.tags.map((item, i) =>{ if(i>0){tags += ", " + item} })
 	return (
 		<Prose>
 			<h1>{metadata.title}</h1>
