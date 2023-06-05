@@ -59,6 +59,8 @@ export default function MdxPostContent({ content, metadata }: LocalPost) {
 			<h1>{metadata.title}</h1>
 			<h3>{metadata.description}</h3>
 			<b>{tags}</b>
+			<i>Create @ {metadata.date}</i>
+			<i>Update @ {metadata.updated}</i>
 			<hr/>
 			{/* @ts-expect-error Server Component */}
 			<MDXRemote source={content} components={components} />
