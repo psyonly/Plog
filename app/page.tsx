@@ -24,7 +24,7 @@ export default async function Page() {
 						className="font-mono text-sm text-neutral-500 dark:text-neutral-400"
 					>
 						{dayjs(post.date).format(
-							dayjs(post.date).isSame(dayjs(), "year") ? "MMM D" : "MMM D, YYYY"
+							dayjs(post.date).isSame(dayjs(), "year") ? "MMM DD" : "MMM DD, YYYY"
 						)}
 					</time>
 					<Link
