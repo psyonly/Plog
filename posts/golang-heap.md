@@ -4,8 +4,8 @@ permalink: golang-heap
 description: "Golang中 Heap的使用方法和介绍"
 cover: https://image.hyoban.cc/file/02e3e5c437e184248f5cb.png
 publish: true
-date: 2023/5/26 17:29:50
-updated: 2023/5/26 17:29:50
+date: 2023/05/26 17:29:50
+updated: 2023/06/06 17:59:23
 tags:
   - golang
   - heap
@@ -74,7 +74,7 @@ func main() {
 
 解释：
 
-* 前三个接口是排序索要实现的接口
+* 前三个接口是排序所要实现的接口
 * Push接口是将数据插入到堆中
 * Pop接口是从堆中删除最后一个数据，并将它作为返回值返回（与堆的顺序类型无关）
 
