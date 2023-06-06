@@ -5,7 +5,7 @@ description: "leetcode #1046 题解"
 cover: https://image.hyoban.cc/file/02e3e5c437e184248f5cb.png
 publish: true
 date: 2023/06/05 21:21:43
-updated: 2023/06/06 09:18:09
+updated: 2023/06/06 09:48:13
 tags:
   - leetcode
   - heap
@@ -36,6 +36,6 @@ tags:
 
 ### 相关资料
 
-> 最大堆的完整讲解 \<https://blog.csdn.net/u014386899/article/details/108141606>
+* 最大堆的完整讲解 \<https://blog.csdn.net/u014386899/article/details/108141606>
 
-> 最大堆操作 \<https://blog.csdn.net/qq_25343557/article/details/88686833>
+* 最大堆操作 \<https://blog.csdn.net/qq_25343557/article/details/88686833>
