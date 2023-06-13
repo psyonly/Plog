@@ -11,17 +11,17 @@ const SITE_CONFIG = {
 		},
 		{
 			type: "Email",
-			url: "mailto:hi@psyonly.cc",
+			url: "mailto:hi@psyonly.top",
 		},
 	],
 	codeTheme: {
 		light: "nord",
 		dark: "nord",
 	},
-	siteUrl: "https://plog-dun.vercel.app",
+	siteUrl: "https://psyonly.top",
 	authorName: "psyonly",
-	authorLink: "https://plog-dun.vercel.app",
-	authorEmail: "hi@psyonly.cc",
+	authorLink: "https://psyonly.top",
+	authorEmail: "hi@psyonly.top",
 	timeZone: "Asia/Shanghai",
 	source: "local",
 } as const
