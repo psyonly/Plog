@@ -56,11 +56,12 @@ export default function MdxPostContent({ content, metadata }: LocalPost) {
 	metadata.tags.map((item, i) =>{ if(i>0){tags += ", "} tags += item })
 	return (
 		<Prose>
-			<h2>{metadata.title}</h2>
-			<h3>{metadata.description}</h3>
-			<b>{tags}</b>
+			<h1>{metadata.title}</h1>
 			<small>Create@{metadata.date} | Update@{metadata.updated}</small>
-			<br></br>
+			<b>{tags}</b>
+			<p>{metadata.description}</p>
+			<br/>
+			{/* <img src="/images/earth_1.jpg" alt="x_store"/> */}
 			{/* @ts-expect-error Server Component */}
 			<MDXRemote source={content} components={components} />
 		</Prose>
