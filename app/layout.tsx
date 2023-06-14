@@ -68,6 +68,7 @@ export default function RootLayout({
 			suppressHydrationWarning
 			className={cn(dm_mono.variable, syne_mono.variable)}
 		>
+			<meta name="baidu-site-verification" content="codeva-ohyNcfxuSm" />
 			<body className="p-8 font-sans transition-colors duration-500 dark:bg-neutral-900 dark:text-white">
 				<ThemeProvider>
 					<div className="mx-auto max-w-[100ch]">
