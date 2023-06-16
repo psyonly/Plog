@@ -56,7 +56,7 @@ export default function MdxPostContent({ content, metadata }: LocalPost) {
 	metadata.tags.map((item, i) =>{ if(i>0){tags += ", "} tags += item })
 	return (
 		<Prose>
-			<h1>{metadata.title}</h1>
+			<h3>{metadata.title}</h3>
 			<small>Create@{metadata.date} | Update@{metadata.updated}</small>
 			<b>{tags}</b>
 			<p>{metadata.description}</p>
