@@ -1,15 +1,13 @@
 ---
-title: firewalld命令
-permalink: linux-firewalld
-description: firewalld命令使用方法
+title: 
+permalink: 
+description: 
 cover: 
 publish: true
-date: 2023/07/31 15:08:16
-updated: 2023/07/31 15:22:15
+date: 2023/06/01 20:07:53
+updated: 2023/06/01 21:06:47
 tags:
-  - linux
-  - centos
-  - firewalld
+  - xxx
 ---
 
 ## centos7 防火墙管理
