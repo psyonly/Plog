@@ -1,7 +1,7 @@
 ---
-title: firewalld ÃüÁî
+title: firewalld å‘½ä»¤
 permalink: linux-firewalld
-description: firewalldÃüÁîÊ¹ÓÃ·½·¨
+description: firewalldå‘½ä»¤ä½¿ç”¨æ–¹æ³•
 cover: 
 publish: true
 date: 2023/07/31 15:08:16
@@ -12,46 +12,46 @@ tags:
   - firewalld
 ---
 
-## centos7 ·À»ğÇ½¹ÜÀí
+## centos7 é˜²ç«å¢™ç®¡ç†
 
-CentOS7ÖĞ£¬²ÉÓÃfirewalld·şÎñÀ´½øĞĞ·À»ğÇ½¹ÜÀí£¬±¾ÎÄ²»¶¨ÆÚ¸üĞÂÆä³£ÓÃÃüÁî¼°ËµÃ÷¡£
+CentOS7ä¸­ï¼Œé‡‡ç”¨firewalldæœåŠ¡æ¥è¿›è¡Œé˜²ç«å¢™ç®¡ç†ï¼Œæœ¬æ–‡ä¸å®šæœŸæ›´æ–°å…¶å¸¸ç”¨å‘½ä»¤åŠè¯´æ˜ã€‚
 
-### ·À»ğÇ½¿ªÆô/¹Ø±Õ/ÖØÆô
+### é˜²ç«å¢™å¼€å¯/å…³é—­/é‡å¯
 
 ```shell
-systemctl start firewalld # ·À»ğÇ½¿ªÆô
+systemctl start firewalld # é˜²ç«å¢™å¼€å¯
 
-systemctl stop firewalld # ¹Ø±Õ·À»ğÇ½
+systemctl stop firewalld # å…³é—­é˜²ç«å¢™
 
-systemctl restart firewalld # ÖØÆô·À»ğÇ½
+systemctl restart firewalld # é‡å¯é˜²ç«å¢™
 
-systemctl status firewalld # ·À»ğÇ½×´Ì¬²éÑ¯
+systemctl status firewalld # é˜²ç«å¢™çŠ¶æ€æŸ¥è¯¢
 
-systemctl enable firewalld # ÆôÓÃ·À»ğÇ½
+systemctl enable firewalld # å¯ç”¨é˜²ç«å¢™
 
-systemctl disable firewalld # ½ûÓÃ·À»ğÇ½
+systemctl disable firewalld # ç¦ç”¨é˜²ç«å¢™
 ```
 
-### ¶Ë¿Ú¹ÜÀí
+### ç«¯å£ç®¡ç†
 
-#### ²éÑ¯ÒÑ¿ªÆô¶Ë¿Ú
+#### æŸ¥è¯¢å·²å¼€å¯ç«¯å£
 
 ```shell
 firewall-cmd --list-ports
 ```
 
-´ËÃüÁî¼°ÈÎºÎ `firewall-cmd` ÃüÁî¾ùĞèÒªÔÚ `firewalld` ·şÎñ¿ªÆô×´Ì¬ÏÂÊ¹ÓÃ¡£
+æ­¤å‘½ä»¤åŠä»»ä½• `firewall-cmd` å‘½ä»¤å‡éœ€è¦åœ¨ `firewalld` æœåŠ¡å¼€å¯çŠ¶æ€ä¸‹ä½¿ç”¨ã€‚
 
-#### ¿ªÆôÖ¸¶¨¶Ë¿Ú
+#### å¼€å¯æŒ‡å®šç«¯å£
 
 ```shell
 firewall-cmd --zone=public --add-port=${port}/tcp --permanent
 ```
 
-port¼°Òª¿ªÆôµÄ¶Ë¿Ú  
-Ğ­Òé²¿·ÖÒ»°ãÊ¹ÓÃ `tcp` ³ı´ËÖ®Íâ»¹Ö§³Ö `tcp|udp|sctp|dccp` ²ÎÊı
+portåŠè¦å¼€å¯çš„ç«¯å£  
+åè®®éƒ¨åˆ†ä¸€èˆ¬ä½¿ç”¨ `tcp` é™¤æ­¤ä¹‹å¤–è¿˜æ”¯æŒ `tcp|udp|sctp|dccp` å‚æ•°
 
-ĞŞ¸ÄºóÒªÊ¹ÓÃÒÔÏÂÃüÁîÖØÆôÉúĞ§
+ä¿®æ”¹åè¦ä½¿ç”¨ä»¥ä¸‹å‘½ä»¤é‡å¯ç”Ÿæ•ˆ
 
 ```shell
 firewall-cmd --reload
