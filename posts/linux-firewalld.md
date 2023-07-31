@@ -15,7 +15,7 @@ tags:
 
 ## centos7 防火墙管理
 
-CentOS7中，采用firewalld服务来进行防火墙管理，本文不定期更新其常用命令及说明。
+CentOS7中，采用 `firewalld` 服务来进行防火墙管理，本文不定期更新其常用命令及说明。
 
 ### 防火墙开启/关闭/重启
 
@@ -49,7 +49,7 @@ firewall-cmd --list-ports
 firewall-cmd --zone=public --add-port=${port}/tcp --permanent
 ```
 
-port及要开启的端口  
+`port` 即要开启的端口  
 协议部分一般使用 `tcp` 除此之外还支持 `tcp|udp|sctp|dccp` 参数
 
 修改后要使用以下命令重启生效
