@@ -1,11 +1,11 @@
 ---
-title: firewalld 命令
+title: firewalld命令
 permalink: linux-firewalld
 description: firewalld命令使用方法
 cover: 
 publish: true
 date: 2023/07/31 15:08:16
-updated: 2023/07/31 15:08:16
+updated: 2023/07/31 15:22:15
 tags:
   - linux
   - centos
