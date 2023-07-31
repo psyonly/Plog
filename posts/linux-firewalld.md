@@ -1,13 +1,16 @@
 ---
-title: 
-permalink: 
-description: 
+title: firewalld命令
+permalink: linux-firewalld
+description: CentOS7的防火墙管理工具
 cover: 
 publish: true
-date: 2023/06/01 20:07:53
-updated: 2023/06/01 21:06:47
+date: 2023/07/31 15:08:16
+updated: 2023/06/01 15:35:47
 tags:
-  - xxx
+  - linux
+  - centos
+  - firewalld
+  - firewall-cmd
 ---
 
 ## centos7 防火墙管理
