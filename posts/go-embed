@@ -1,0 +1,62 @@
+---
+title: go embed包详解
+permalink: go-embed
+description: 方便的使用自带的包实现静态资源内嵌
+cover: 
+publish: true
+date: 2023/08/08 20:40:40
+updated: 2023/08/08 21:25:45
+tags:
+  - go
+---
+
+## go embed命令详解
+
+在以往的Go开发过程中，当我们出现需要静态文件资源时，一般只有两种方法来实现：
+
+1. 使用 `go-bindata` 等第三方工具来将静态资源打包到程序中。
+2. 外置静态资源
+
+但从 `1.16` 版本后，官方包embed添加了对与静态资源的支持，此后可以方便的将静态资源同程序一起打包编译。
+
+### 使用方法
+
+embed的使用非常简单，仅仅需要一个 `//go:embed <file_name>` 指令即可。它通过将静态文件绑定到变量上来实现静态资源的内置，目前支持以下三种变量类型：
+
+1. string
+2. []byte
+3. fs.FS
+
+其中 `string` 和 `[]byte` 这两种变量类型较为相似，这里以 `string` 为例来演示其使用方法。  
+这两种方法基本都是将单个文件的内容内嵌到一个变量，基本用来对单个文件进行静态资源管理。  
+首先我们先创建一个 `version.txt` 文件来模拟静态资源文件，文件内容如下：
+
+```txt
+v23.8.2
+```
+
+在其同级目录下创建程序文件 `main.go` ，内容如下：
+
+```go
+package main
+
+import (
+    _ "embed"
+    "fmt"
+)
+
+//go:embed version.txt
+var version string
+
+func main() {
+    fmt.Printf("version %s\n", version)
+}
+
+```
+
+编译并运行程序，可以看到输出如下内容：
+
+```shell
+version 23.8.2
+
+```
