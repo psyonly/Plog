@@ -1,11 +1,11 @@
 ---
 title: go embed包详解
-permalink: go-embed
+permalink: golang-embed
 description: 方便的使用自带的包实现静态资源内嵌
 cover: 
 publish: true
 date: 2023/08/08 20:40:40
-updated: 2023/08/08 21:25:45
+updated: 2023/08/09 09:31:19
 tags:
   - go
 ---
