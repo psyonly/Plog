@@ -1,6 +1,6 @@
 ---
 title: go embed包详解
-permalink: go-embed
+permalink: golang-embed
 description: 方便的使用自带的包实现静态资源内嵌
 cover: 
 publish: true
