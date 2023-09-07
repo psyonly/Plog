@@ -5,7 +5,7 @@ description: 在使用http包进行请求时需要关闭body
 cover: 
 publish: true
 date: 2023/09/07 16:40:52
-updated: 2023/09/07 16:40:52
+updated: 2023/09/07 17:36:42
 tags:
   - golang
   - http
@@ -33,7 +33,7 @@ func send() {
 
 已经定位到了罪魁祸首，接下来就要分析代码。全篇中只有上面提到的核心部分有端口占用相关逻辑，可以看到代码中没有阻塞住的地方，但代码中没有对response的处理，遂查看response部分文档。
 
-```txt
+```go
 type Response struct {
 	......
 
@@ -63,7 +63,7 @@ type Response struct {
 
 结构体的描述代码中提到，除非Response.Body被读取完成或关闭时才会触发连接复用的操作，因此我们尝试修改代码，添加对body的关闭操作。
 
-```
+```go
 func send() {
 	resp, err := http.Post(url, "application/json", reqJson)
 	if err != nil {
