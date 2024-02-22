@@ -5,9 +5,9 @@ description: 局域网内远程管理Hyper-V
 cover: 
 publish: true
 date: 2024/02/22 11:29:05
-updated: 2024/02/22 16:57:00
+updated: 2024/02/22 17:05:07
 tags:
-  - hyper-v
+  - hyperv
   - windows
 ---
 
@@ -20,10 +20,10 @@ tags:
 
 ## 环境
 
-| 机器 | 系统 | 用途 | IP | 备注 |
-|-|-|-|-|-|
-| 主力机 | Windows LTSC | 日常办公娱乐 | 192.168.1.105 |  |
-| NAS服务器 | Windows LTSC | 存储 | 192.168.1.205 | 已安装好Hyper-V和CentOS服务器 |
+| 机器 | 系统 | 用途 | IP | 备注 |  
+|-|-|-|-|-|  
+| 主力机 | Windows LTSC | 日常办公娱乐 | 192.168.1.105 |  |  
+| NAS服务器 | Windows LTSC | 存储 | 192.168.1.205 | 已安装好Hyper-V和CentOS服务器 |  
 
 
 两个服务器均登陆了同一个Microsoft账号。
