@@ -1,108 +1,111 @@
 ---
-title: Hyper-V Ô¶³Ì¹ÜÀí
+title: Hyper-V è¿œç¨‹ç®¡ç†
 permalink: hyperv-remote
-description: Hyper-V ¾ÖÓòÍøÄÚÔ¶³Ì¹ÜÀí
+description: Hyper-V å±€åŸŸç½‘å†…è¿œç¨‹ç®¡ç†
 cover: 
 publish: true
 date: 2024/02/22 11:29:05
-updated: 2024/02/22 16:17:49
+updated: 2024/02/22 16:38:00
 tags:
   - hyper-v
   - windows
 ---
 
-## ±³¾°
+## èƒŒæ™¯
 
-×î½üÒª´î½¨Ò»¸öCM·þÎñÆ÷£¬ÊÖÍ·ÓÐÒ»Ì¨WindowsµÄNAS£¬ÓÚÊÇÔÚÉÏÃæÍ¨¹ýHyper-V²¿ÊðÒ»¸öCentOSÀ´ÔËÐÐCM·þÎñÆ÷¡£µ«ÊÇÃ¿´Î¶¼Òª´ÓÖ÷Á¦»úÉÏÔ¶³Ìµ½NAS¶ÔHyper-V½øÐÐ¹ÜÀí£¬ºÜ²»·½±ã£¬ÓÚÊÇÏëÖ±½Ó´ÓÖ÷Á¦»úµÄHyper-V¹ÜÀíÆ÷Ô¶³ÌÁ¬½ÓÉÏNASµÄHyper-V¡£
-ÕÒ±éÁËÍøÉÏµÄ½Ì³Ì£¬´ó¶àÊýËµµÄ²»¹»ÇåÎúÃ÷°×£¬ÓÚÊÇÒÔÎÒµÄ»·¾³ÎªÀý£¬×öÒ»Æª·ÖÏí¡£
+æœ€è¿‘è¦æ­å»ºä¸€ä¸ªCMæœåŠ¡å™¨ï¼Œæ‰‹å¤´æœ‰ä¸€å°Windowsçš„NASï¼ŒäºŽæ˜¯åœ¨ä¸Šé¢é€šè¿‡Hyper-Véƒ¨ç½²ä¸€ä¸ªCentOSæ¥è¿è¡ŒCMæœåŠ¡å™¨ã€‚ä½†æ˜¯æ¯æ¬¡éƒ½è¦ä»Žä¸»åŠ›æœºä¸Šè¿œç¨‹åˆ°NASå¯¹Hyper-Vè¿›è¡Œç®¡ç†ï¼Œå¾ˆä¸æ–¹ä¾¿ï¼ŒäºŽæ˜¯æƒ³ç›´æŽ¥ä»Žä¸»åŠ›æœºçš„Hyper-Vç®¡ç†å™¨è¿œç¨‹è¿žæŽ¥ä¸ŠNASçš„Hyper-Vã€‚
+æ‰¾éäº†ç½‘ä¸Šçš„æ•™ç¨‹ï¼Œå¤§å¤šæ•°è¯´çš„ä¸å¤Ÿæ¸…æ™°æ˜Žç™½ï¼ŒäºŽæ˜¯ä»¥æˆ‘çš„çŽ¯å¢ƒä¸ºä¾‹ï¼Œåšä¸€ç¯‡åˆ†äº«ã€‚
 
-## »·¾³
+## çŽ¯å¢ƒ
 
-* Ö÷Á¦»ú£ºWindows LTSC ÓÃÓÚÈÕ³£°ì¹«ÓéÀÖ IP 192.168.1.105 
-* NAS·þÎñÆ÷£ºWindows LTSC ÓÃÓÚ´æ´¢ IP 192.168.1.205 ÒÑ°²×°ºÃHyper-VºÍCentOS·þÎñÆ÷
+| æœºå™¨ | ç³»ç»Ÿ | ç”¨é€” | IP | å¤‡æ³¨ |
+|   -  |   -  |   -  |  - |   -  |
+| ä¸»åŠ›æœº | Windows LTSC | æ—¥å¸¸åŠžå…¬å¨±ä¹ | 192.168.1.105 |  |
+| NASæœåŠ¡å™¨ | Windows LTSC | å­˜å‚¨ | 192.168.1.205 | å·²å®‰è£…å¥½Hyper-Vå’ŒCentOSæœåŠ¡å™¨ |
 
-Á½¸ö·þÎñÆ÷¾ùµÇÂ½ÁËÍ¬Ò»¸öMicrosoftÕËºÅ¡£
 
-<image>(Á½»ú½ØÍ¼)
+ä¸¤ä¸ªæœåŠ¡å™¨å‡ç™»é™†äº†åŒä¸€ä¸ªMicrosoftè´¦å·ã€‚
 
-Á½ÕßÔÚÍ¬Ò»Íø¶Î£¬ÇÒ¿ÉÒÔÏà»¥pingÍ¨¡£
+(image)(ä¸¤æœºæˆªå›¾)
 
-<image>(±¾»úping NASÓòÃû½ØÍ¼)
+ä¸¤è€…åœ¨åŒä¸€ç½‘æ®µï¼Œä¸”å¯ä»¥ç›¸äº’pingé€šã€‚
 
-ÏÂÎÄÍ³³ÆÖ÷Á¦»úÎª±¾»ú£¬NASÎª·þÎñÆ÷¡£
+(image)(æœ¬æœºping NASåŸŸåæˆªå›¾)
 
-## ·þÎñ¶ËÅäÖÃ
+ä¸‹æ–‡ç»Ÿç§°ä¸»åŠ›æœºä¸ºæœ¬æœºï¼ŒNASä¸ºæœåŠ¡å™¨ã€‚
 
-´ò¿ª `powershell` ÔËÐÐÒÔÏÂÃüÁî£º
+## æœåŠ¡ç«¯é…ç½®
+
+æ‰“å¼€ `powershell` è¿è¡Œä»¥ä¸‹å‘½ä»¤ï¼š
 
 ```shell 
-Enable-PSRemoting # ¿ªÆôÔ¶³Ì¹ÜÀí
+Enable-PSRemoting # å¼€å¯è¿œç¨‹ç®¡ç†
 
-Enable-WSManCredSSP -role server # ¿ªÆôCredSSPÉí·ÝÑéÖ¤
+Enable-WSManCredSSP -role server # å¼€å¯CredSSPèº«ä»½éªŒè¯
 
-netsh advfirewall set currentprofile state off # ¹Ø±Õ·À»ðÇ½
+netsh advfirewall set currentprofile state off # å…³é—­é˜²ç«å¢™
 ```
 
-## ¿Í»§¶ËÅäÖÃ
+## å®¢æˆ·ç«¯é…ç½®
 
-1. ÆôÓÃHyper-V¹ÜÀí¹¤¾ß
+1. å¯ç”¨Hyper-Vç®¡ç†å·¥å…·
 
-Ç°Íù `ÉèÖÃ-³ÌÐòºÍ¹¦ÄÜ-ÆôÓÃ»ò¹Ø±ÕWindows¹¦ÄÜ` ¹´Ñ¡Hyper-V¹ÜÀí¹¤¾ß¡£
+å‰å¾€ `è®¾ç½®-ç¨‹åºå’ŒåŠŸèƒ½-å¯ç”¨æˆ–å…³é—­WindowsåŠŸèƒ½` å‹¾é€‰Hyper-Vç®¡ç†å·¥å…·ã€‚
 
-×¢Òâ£¬ÕâÀï±¾»ú²»°²×°ÐéÄâ»ú£¬Ö»Á¬½Óµ½·þÎñÆ÷µÄHyper-V£¬Òò´ËÖ»ÐèÒª°²×°¹ÜÀí¹¤¾ß¼´¿É£¬²»ÐèÒª°²×°Hyper-VÆ½Ì¨¡£
+æ³¨æ„ï¼Œè¿™é‡Œæœ¬æœºä¸å®‰è£…è™šæ‹Ÿæœºï¼Œåªè¿žæŽ¥åˆ°æœåŠ¡å™¨çš„Hyper-Vï¼Œå› æ­¤åªéœ€è¦å®‰è£…ç®¡ç†å·¥å…·å³å¯ï¼Œä¸éœ€è¦å®‰è£…Hyper-Vå¹³å°ã€‚
 
-<image>(ÆôÓÃHyper-V½ØÍ¼)
+(image)(å¯ç”¨Hyper-Væˆªå›¾)
 
-2. HOSTS¼ÇÂ¼Ìí¼Ó
+2. HOSTSè®°å½•æ·»åŠ 
 
-ÏÈÓÃÃüÁîpingÒ»ÏÂ·þÎñÆ÷µÄ¼ÆËã»úÃû£¬Èç¹û¿ÉÒÔÍ¨¾ÍÌø¹ý±¾²½Öè¡£
+å…ˆç”¨å‘½ä»¤pingä¸€ä¸‹æœåŠ¡å™¨çš„è®¡ç®—æœºåï¼Œå¦‚æžœå¯ä»¥é€šå°±è·³è¿‡æœ¬æ­¥éª¤ã€‚
 
-<image>(±¾»úping·þÎñÆ÷¼ÆËã»úÃû)
+(image)(æœ¬æœºpingæœåŠ¡å™¨è®¡ç®—æœºå)
 
-Èç¹ûÎÞ·¨pingÍ¨£¬ÔòÌí¼ÓÒÔÏÂÄÚÈÝµ½ `C:\Windows\System32\drivers\etc\hosts`
+å¦‚æžœæ— æ³•pingé€šï¼Œåˆ™æ·»åŠ ä»¥ä¸‹å†…å®¹åˆ° `C:\Windows\System32\drivers\etc\hosts`
 
 ```shell
 192.168.1.205		NAS
 ```
 
-½«IPÌæ»»ÎªÄãµÄ·þÎñÆ÷µØÖ·£¬ÓòÃûÐÞ¸ÄÎª¶ÔÓ¦·þÎñÆ÷µÄ¼ÆËã»úÃû¡£Íê³ÉºóÖØÐÂping·þÎñÆ÷²âÊÔÊÇ·ñ³É¹¦¡£
+å°†IPæ›¿æ¢ä¸ºä½ çš„æœåŠ¡å™¨åœ°å€ï¼ŒåŸŸåä¿®æ”¹ä¸ºå¯¹åº”æœåŠ¡å™¨çš„è®¡ç®—æœºåã€‚å®ŒæˆåŽé‡æ–°pingæœåŠ¡å™¨æµ‹è¯•æ˜¯å¦æˆåŠŸã€‚
 
-3. ÐÞ¸Ä×é²ßÂÔ
+3. ä¿®æ”¹ç»„ç­–ç•¥
 
-powershellÔËÐÐ `gpedit.msc`£¬ÕÒµ½ `¼ÆËã»úÅäÖÃ-¹ÜÀíÄ£°å-Æ¾¾Ý·ÖÅä-ÏµÍ³-ÔÊÐí·ÖÅäÐÂµÄÆ¾¾ÝÓÃÓÚNTLM·þÎñÆ÷Éí·ÝÑéÖ¤`
+powershellè¿è¡Œ `gpedit.msc`ï¼Œæ‰¾åˆ° `è®¡ç®—æœºé…ç½®-ç®¡ç†æ¨¡æ¿-å‡­æ®åˆ†é…-ç³»ç»Ÿ-å…è®¸åˆ†é…æ–°çš„å‡­æ®ç”¨äºŽNTLMæœåŠ¡å™¨èº«ä»½éªŒè¯`
 
-<image>(gpedit½ØÍ¼)
+(image)(gpeditæˆªå›¾)
 
-Ñ¡ÔñÒÑÆôÓÃ£¬½«ÒÔÏÂÄÚÈÝÌí¼Óµ½ÁÐ±í£º
+é€‰æ‹©å·²å¯ç”¨ï¼Œå°†ä»¥ä¸‹å†…å®¹æ·»åŠ åˆ°åˆ—è¡¨ï¼š
 
 ```shell
 WSMAN/*
 TERMSRV/*
 ```
 
-<image>(ÉèÖÃÏî)
+(image)(è®¾ç½®é¡¹)
 
-4. WindowsÔ¶³Ì¹ÜÀíÅäÖÃ
+4. Windowsè¿œç¨‹ç®¡ç†é…ç½®
 
-´ÓpowershellÖ´ÐÐÒÔÏÂÃüÁî£º
+ä»Žpowershellæ‰§è¡Œä»¥ä¸‹å‘½ä»¤ï¼š
 
 ```
-winrm quickconfig # ÆôÓÃwinrm
+winrm quickconfig # å¯ç”¨winrm
 
-Set-Item WSMan:\localhost\Client\TrustedHosts -Value "NAS" # winrm°²È«ÅäÖÃ ×îºóµÄÖµÌæ»»Îª·þÎñÆ÷Ö÷»úÃû
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value "NAS" # winrmå®‰å…¨é…ç½® æœ€åŽçš„å€¼æ›¿æ¢ä¸ºæœåŠ¡å™¨ä¸»æœºå
 
-Enable-WSManCredSSP -Role client -DelegateComputer "NAS" # winrmÉí·ÝÑéÖ¤ÅäÖÃ
+Enable-WSManCredSSP -Role client -DelegateComputer "NAS" # winrmèº«ä»½éªŒè¯é…ç½®
 ```
 
-5. Á¬½ÓHyper-V·þÎñÆ÷
+5. è¿žæŽ¥Hyper-VæœåŠ¡å™¨
 
-´ò¿ªHyper-V¹ÜÀíÆ÷£¬ÔÚ×óÉÏ·½µÄHyper-V¹ÜÀíÆ÷ÉÏÓÒ¼ü-Á¬½Óµ½·þÎñÆ÷ÔÚµ¯³öµÄ¶Ô»°¿òÖÐÑ¡Ôñ `ÁíÒ»Ì¨¼ÆËã»ú`£¬Ò»¶¨ÌîÐ´·þÎñÆ÷µÄ¼ÆËã»úÃû³Æ£¬²»ÒªÌîIP£¬¹´Ñ¡ÏÂ·½ `×÷ÎªÁíÒ»¸öÓÃ»§Á¬½Ó`£¬ÊäÈëÓÃ»§ÃûºÍÃÜÂë£¬µã»÷È·¶¨£¬´ËÊ±¾Í¿ÉÒÔÁ¬½ÓÉÏ·þÎñÆ÷µÄHyper-VÁË¡£
+æ‰“å¼€Hyper-Vç®¡ç†å™¨ï¼Œåœ¨å·¦ä¸Šæ–¹çš„Hyper-Vç®¡ç†å™¨ä¸Šå³é”®-è¿žæŽ¥åˆ°æœåŠ¡å™¨åœ¨å¼¹å‡ºçš„å¯¹è¯æ¡†ä¸­é€‰æ‹© `å¦ä¸€å°è®¡ç®—æœº`ï¼Œä¸€å®šå¡«å†™æœåŠ¡å™¨çš„è®¡ç®—æœºåç§°ï¼Œä¸è¦å¡«IPï¼Œå‹¾é€‰ä¸‹æ–¹ `ä½œä¸ºå¦ä¸€ä¸ªç”¨æˆ·è¿žæŽ¥`ï¼Œè¾“å…¥ç”¨æˆ·åå’Œå¯†ç ï¼Œç‚¹å‡»ç¡®å®šï¼Œæ­¤æ—¶å°±å¯ä»¥è¿žæŽ¥ä¸ŠæœåŠ¡å™¨çš„Hyper-Väº†ã€‚
 
-<image>(Á¬½Óµ½·þÎñÆ÷)
-<image>(ÊäÈëÓÃ»§Ãû)
+(image)(è¿žæŽ¥åˆ°æœåŠ¡å™¨)
+(image)(è¾“å…¥ç”¨æˆ·å)
 
-×¢Òâ£º´ËÊ±Èç¹ûÑ¡ÔñÓÃ»§Ê§°Ü£¬¿ÉÒÔÔÚÓÃ»§ÃûÇ°Ìí¼Ó `.\¡£`
+æ³¨æ„ï¼šæ­¤æ—¶å¦‚æžœé€‰æ‹©ç”¨æˆ·å¤±è´¥ï¼Œå¯ä»¥åœ¨ç”¨æˆ·åå‰æ·»åŠ  `.\ã€‚`
 
-<image>(Á¬½Ó³É¹¦£¬Hyper-V·þÎñÆ÷)
+(image)(è¿žæŽ¥æˆåŠŸï¼ŒHyper-VæœåŠ¡å™¨)
 
 
