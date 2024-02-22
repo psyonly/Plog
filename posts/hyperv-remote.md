@@ -1,11 +1,11 @@
 ---
-title: Hyper-V 远程管理
+title: Hyper-V远程管理
 permalink: hyperv-remote
-description: Hyper-V 局域网内远程管理
+description: 局域网内远程管理Hyper-V
 cover: 
 publish: true
 date: 2024/02/22 11:29:05
-updated: 2024/02/22 16:38:00
+updated: 2024/02/22 16:57:00
 tags:
   - hyper-v
   - windows
@@ -13,15 +13,17 @@ tags:
 
 ## 背景
 
-最近要搭建一个CM服务器，手头有一台Windows的NAS，于是在上面通过Hyper-V部署一个CentOS来运行CM服务器。但是每次都要从主力机上远程到NAS对Hyper-V进行管理，很不方便，于是想直接从主力机的Hyper-V管理器远程连接上NAS的Hyper-V。
+最近要搭建一个CM服务器，手头有一台Windows的NAS，于是在上面通过Hyper-V部署一个CentOS来运行CM服务器。但是每次都要从
+
+主力机上远程到NAS对Hyper-V进行管理，很不方便，于是想直接从主力机的Hyper-V管理器远程连接上NAS的Hyper-V。
 找遍了网上的教程，大多数说的不够清晰明白，于是以我的环境为例，做一篇分享。
 
 ## 环境
 
-| 机器 | 系统 | 用途 | IP | 备注 |  
-|   -  |   -  |   -  |  - |   -  |  
-| 主力机 | Windows LTSC | 日常办公娱乐 | 192.168.1.105 |  |  
-| NAS服务器 | Windows LTSC | 存储 | 192.168.1.205 | 已安装好Hyper-V和CentOS服务器 |  
+| 机器 | 系统 | 用途 | IP | 备注 |
+|-|-|-|-|-|
+| 主力机 | Windows LTSC | 日常办公娱乐 | 192.168.1.105 |  |
+| NAS服务器 | Windows LTSC | 存储 | 192.168.1.205 | 已安装好Hyper-V和CentOS服务器 |
 
 
 两个服务器均登陆了同一个Microsoft账号。
@@ -99,7 +101,11 @@ Enable-WSManCredSSP -Role client -DelegateComputer "NAS" # winrm身份验证配�
 
 5. 连接Hyper-V服务器
 
-打开Hyper-V管理器，在左上方的Hyper-V管理器上右键-连接到服务器在弹出的对话框中选择 `另一台计算机`，一定填写服务器的计算机名称，不要填IP，勾选下方 `作为另一个用户连接`，输入用户名和密码，点击确定，此时就可以连接上服务器的Hyper-V了。
+打开Hyper-V管理器，在左上方的Hyper-V管理器上右键-连接到服务器在弹出的对话框中选择 `另一台计算机`，一定填写服务器
+
+的计算机名称，不要填IP，勾选下方 `作为另一个用户连接`，输入用户名和密码，点击确定，此时就可以连接上服务器的
+
+Hyper-V了。
 
 (image)(连接到服务器)
 (image)(输入用户名)
