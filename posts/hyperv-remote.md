@@ -1,14 +1,14 @@
 ---
-title: Hyper-V远程管理
+title: 使用ffmpeg推流2
 permalink: hyperv-remote
-description: 局域网内远程管理Hyper-V
+description: 使用ffmpeg推视频流 并封装为系统服务
 cover: 
 publish: true
-date: 2024/02/22 11:29:05
-updated: 2024/02/22 17:05:07
+date: 2024/02/22 15:08:30
+updated: 2023/11/23 11:31:17
 tags:
-  - hyperv
-  - windows
+  - ffmpeg
+  - linux
 ---
 
 ## 背景
