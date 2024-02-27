@@ -26,8 +26,12 @@ tags:
 
 两个服务器均登陆了同一个Microsoft账号。
 
-(image)(两机截图)
-![主力机](../images/hyperv-remote/1-radeon-info.png)
+**主力机**
+![主力机](https://pic.imgdb.cn/item/65ddf0079f345e8d03efc44f.png)
+
+**服务器**
+![服务器](https://pic.imgdb.cn/item/65ddf00f9f345e8d03efe09c.png)
+
 两者在同一网段，且可以相互ping通。
 
 (image)(本机ping NAS域名截图)
