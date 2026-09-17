@@ -13,6 +13,10 @@ const SITE_CONFIG = {
 			type: "Email",
 			url: "mailto:hi@psyonly.top",
 		},
+		{
+			type: "CarPT",
+			url: "https://carpt.net/promotionlink.php?key=9ffb0be7fd21f49249d5ed104695d627",
+		},
 	],
 	codeTheme: {
 		light: "nord",

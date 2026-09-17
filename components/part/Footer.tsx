@@ -18,9 +18,6 @@ const Footer = () => {
 			{SITE_CONFIG.links.map((link, index) => (
 				<IconLink {...link} key={index} />
 			))}
-			<a href="https://carpt.net/promotionlink.php?key=9ffb0be7fd21f49249d5ed104695d627">
-				<img src="https://carpt.net/pic/prolink.png" alt="CarPT" title="CarPT - =链接@分享=">
-			</a>
 			<Clock />
 		</footer>
 	)
